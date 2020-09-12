@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class SumAndAverage {
     public static void main(String[] args) {
-        //We can call out methods here
+        //We can call our methods here
         printLnSum(input());
         printLnAverage(input());
     }
@@ -18,7 +18,7 @@ public class SumAndAverage {
     //Method for average
     public static int average (ArrayList<Integer> numbers){
         int result = 0;
-        if (numbers.size() == 0){
+        if (numbers.size() < 1){
             System.out.println("Invalid operation");
         } else{
             int average = sumOfArray(numbers)/numbers.size();
@@ -38,8 +38,10 @@ public class SumAndAverage {
     public static ArrayList<Integer> input (){
         Scanner input = new Scanner(System.in);
         ArrayList<Integer> numberList = new ArrayList<>();
+
         System.out.println("Enter the amount of numbers in the list:");
         int amountofNumbers = input.nextInt();
+
         System.out.println("Enter your numbers:");
         for (int i = 1; i <= amountofNumbers; i++){
             int numbers = input.nextInt();

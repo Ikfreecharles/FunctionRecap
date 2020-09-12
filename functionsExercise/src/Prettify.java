@@ -9,7 +9,7 @@ public class Prettify {
         System.out.println("Enter your separating character here:");
         char character = scanner.next().charAt(0);
 
-        //calling the method because it's not static
+        //calling the method because it's not static (for practice)
         Prettify pretty = new Prettify();
         pretty.prettify(myWord, character);
     }

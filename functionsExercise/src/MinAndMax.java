@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class MinAndMax {
     public static void main(String[] args) {
+        //the method SumAndAverage.input() is called as a reference from the class SumAndAverage.java
         printLn(SumAndAverage.input());
     }
     public static int min (ArrayList<Integer> numbers){
