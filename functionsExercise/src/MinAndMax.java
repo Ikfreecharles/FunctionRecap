@@ -5,25 +5,25 @@ public class MinAndMax {
         //the method .input() is called as a reference from the class SumAndAverage.java
         printLn(SumAndAverage.input());
     }
-    public static int min (ArrayList<Integer> numbers){
-        int min = numbers.get(0);
-        for (int eachNumber: numbers){
+    public static double min (ArrayList<Double> numbers){
+        double min = numbers.get(0);
+        for (double eachNumber: numbers){
             if (eachNumber < min){
                 min = eachNumber;
             }
         }
         return min;
     }
-    public static int max (ArrayList<Integer> numbers){
-        int max = 0;
-        for (int eachNumber : numbers) {
+    public static double max (ArrayList<Double> numbers){
+        double max = 0;
+        for (double eachNumber : numbers) {
             if (max < eachNumber) {
                 max = eachNumber;
             }
         }
         return max;
     }
-    public static void printLn(ArrayList<Integer> numbers){
+    public static void printLn(ArrayList<Double> numbers){
         System.out.println("The minimum number here is " + min(numbers));
         System.out.println("The maximum number here is " + max(numbers));
     }

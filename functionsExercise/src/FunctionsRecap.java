@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 public class FunctionsRecap {
     public static void main(String[] args) {
+
     }
 //    public static void prettify(String myString, char separatingChar){
 //        String newString = "";
