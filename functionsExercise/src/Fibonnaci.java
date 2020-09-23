@@ -5,7 +5,7 @@ public class Fibonnaci {
     public static int fibonacci(int nthTerm){
         if (nthTerm == 0){
             return 0;
-        }else if (nthTerm <= 2){
+        }else if (nthTerm == 1){
             return 1;
         }else{
             return fibonacci(nthTerm-1) + fibonacci(nthTerm-2);
